@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#666666">
+    <item
+        android:id="@+id/ahome"
+        android:title="Home"
+        android:icon="@drawable/ic_round_home_24"
+        app:cnb_iconColor="@color/prim"/>
+
+    <item android:id="@+id/aadd"
+        android:title="add"
+        android:icon="@drawable/ic_round_add_24"
+
+        app:cnb_iconColor="@color/prim"/>
+
+
+
+    <item
+        android:id="@+id/afavorite"
+        android:title="Favorite"
+        android:icon="@drawable/favorite"
+        app:cnb_iconColor="#950000"
+
+        />
+
+    <item
+        android:id="@+id/aperson"
+        android:title="Profile"
+        android:icon="@drawable/ic_round_person_24"
+        app:cnb_iconColor="@color/prim"/>
+
+</menu>

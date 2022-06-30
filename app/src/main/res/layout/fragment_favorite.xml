@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FavoriteFragment"
+
+    android:layout_margin="10dp"
+
+    android:fadeScrollbars="false"
+    android:nestedScrollingEnabled="false"
+    android:overScrollMode="never"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="none"
+
+
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bookType"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="28dp"
+
+            android:fontFamily="@font/aref_ruqaa_bold"
+            android:gravity="center"
+            android:text="My Favorite Books"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_21ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+
+            android:background="#FFFFFF"
+
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bookType"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginTop="50dp"
+
+            android:src="@drawable/ic_sharp_turned_in_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/recycleView" />
+
+        <TextView
+            android:id="@+id/AddingBookmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Adding Bookmarks"
+            android:fontFamily="@font/aref_ruqaa_bold"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="When you're reading a book, tap the Bookmark button to mark the current page."
+            android:maxWidth="@dimen/_270sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddingBookmarks" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

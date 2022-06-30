@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+
+    android:layout_marginStart="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_5sdp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_146sdp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bookimage"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:maxWidth="@dimen/_180sdp"
+        android:maxLines="1"
+        android:text="TextViasdasdasdasdasdasdew"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/asd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:text=" by : "
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="@+id/bookName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bookName"
+        app:layout_constraintTop_toBottomOf="@+id/bookName" />
+
+    <TextView
+        android:id="@+id/bookauther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:text="TextView"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/asd"
+        app:layout_constraintStart_toEndOf="@+id/asd"
+        app:layout_constraintTop_toTopOf="@+id/asd" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="45dp"
+
+        android:indeterminateOnly="false"
+        android:numStars="5"
+
+        android:progressTint="#000000"
+        android:rating="1.5"
+        android:scaleX=".6"
+        android:scaleY=".55"
+        android:secondaryProgressTint="#000000"
+        android:stepSize=".5"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/asd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/asd"
+        app:layout_constraintTop_toBottomOf="@+id/bookauther"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/bookyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/numberOfPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:text="100"
+        app:layout_constraintStart_toStartOf="@+id/bookyear"
+        app:layout_constraintTop_toBottomOf="@+id/bookyear" />
+
+    <TextView
+        android:id="@+id/asdasd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/aref_ruqaa_bold"
+        android:text="Page"
+        android:textColor="#494747"
+        app:layout_constraintBottom_toBottomOf="@+id/numberOfPages"
+        app:layout_constraintStart_toEndOf="@+id/numberOfPages"
+        app:layout_constraintTop_toTopOf="@+id/numberOfPages" />
+
+    <ImageView
+        android:id="@+id/isfevaret"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_23sdp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/numberOfPages"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/numberOfPages"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfPages"
+        app:srcCompat="@drawable/ic_favorite_false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
